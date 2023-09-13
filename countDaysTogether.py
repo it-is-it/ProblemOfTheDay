@@ -33,6 +33,9 @@ class Solution:
 
         start_date = max(arriveAlice_date,arriveBob_date)
         end_date = min(leaveAlice_date,leaveBob_date)
+        print("start_date:", start_date)
+        print("end_date:", end_date)
+
 
         overlap_days = (end_date -start_date).days +1
         return max(0, overlap_days)
