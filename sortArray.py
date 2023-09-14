@@ -4,8 +4,6 @@
 
 # You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and with the smallest space complexity possible.
 
- 
-
 # Example 1:
 
 # Input: nums = [5,2,3,1]
@@ -17,9 +15,8 @@
 # Output: [0,0,1,1,2,5]
 # Explanation: Note that the values of nums are not necessairly unique.
 
-
+ #Implementing mergesort in this method of sorting an array
 from typing import List
-
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         # Base case: if the array has 0 or 1 element, it is already sorted.
