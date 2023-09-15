@@ -34,11 +34,11 @@ class Solution:
         # Traverse both input linked lists while considering the carry.
         while l1 or l2 or carry:
             # Get the values from the current nodes or set to 0 if the node is None.
-            value1 = l1.val if l1 else 0
-            value2 = l2.val if l2 else 0
+            digit1 = l1.val if l1 else 0
+            digit2 = l2.val if l2 else 0
             
             # Calculate the total sum for the current digits, including the carry.
-            total = value1 + value2 + carry
+            total = digit1 + digit2 + carry
             carry = total // 10  # Calculate the carry for the next iteration.
 
             # Create a new node with the current digit and append it to the result.
@@ -81,17 +81,20 @@ if __name__ == "__main__":
     l2 = list_to_linked_list([5, 6, 4])
     result = solution.addTwoNumbers(l1, l2)
     assert linked_list_to_list(result) == [7, 0, 8]
+    print("Test case 1 passed. Result:", linked_list_to_list(result))
 
     # Test case 2: 0 + 0 = 0
     l1 = list_to_linked_list([0])
     l2 = list_to_linked_list([0])
     result = solution.addTwoNumbers(l1, l2)
     assert linked_list_to_list(result) == [0]
+    print("Test case 2 passed. Result:", linked_list_to_list(result))
 
     # Test case 3: 9999999 + 9999 = 10009998 
     l1 = list_to_linked_list([9,9,9,9,9,9,9])
     l2 = list_to_linked_list([9,9,9,9])
     result = solution.addTwoNumbers(l1, l2)
     assert linked_list_to_list(result) == [8,9,9,9,0,0,0,1]
+    print("Test case 3 passed. Result:", linked_list_to_list(result))
 
     print("All test cases passed!")
