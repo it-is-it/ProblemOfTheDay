@@ -4,30 +4,18 @@
 
 # You can use each character in text at most once. Return the maximum number of instances that can be formed.
 
- 
 
 # Example 1:
-
-
-
 # Input: text = "nlaebolko"
 # Output: 1
+
 # Example 2:
-
-
-
 # Input: text = "loonbalxballpoon"
 # Output: 2
-# Example 3:
 
+# Example 3:
 # Input: text = "leetcode"
 # Output: 0
- 
-
-
-
-
-
 
 
 class Solution:
@@ -61,21 +49,17 @@ if __name__ == "__main__":
     solution = Solution()
     
     # Test case 1: Should return 1
-    input_str1 = "nlaobllnoa"
+    input_str1 = "nlaebolko"
     result1 = solution.maxNumberOfBalloons(input_str1)
     print(f"Test case 1: {result1}")
     
     # Test case 2: Should return 2
-    input_str2 = "balloonballoon"
+    input_str2 = "loonbalxballpoon"
     result2 = solution.maxNumberOfBalloons(input_str2)
     print(f"Test case 2: {result2}")
     
     # Test case 3: Should return 0
-    input_str3 = "ban"
+    input_str3 = "leetcode"
     result3 = solution.maxNumberOfBalloons(input_str3)
     print(f"Test case 3: {result3}")
     
-    # Test case 4: Should return 0
-    input_str4 = "loonbalx"
-    result4 = solution.maxNumberOfBalloons(input_str4)
-    print(f"Test case 4: {result4}")
