@@ -28,3 +28,10 @@ class Solution:
                 max_profit=price - buy
             
             return max_profit
+
+# Example usage:
+prices1 = [7, 1, 5, 3, 6, 4]
+print(maxProfit(prices1))  # Output: 5
+
+prices2 = [7, 6, 4, 3, 1]
+print(maxProfit(prices2))  # Output: 0
