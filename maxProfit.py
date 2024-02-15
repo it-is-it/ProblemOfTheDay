@@ -27,11 +27,12 @@ class Solution:
             elif price - buy > max_profit:
                 max_profit=price - buy
             
-            return max_profit
+        return max_profit
 
+solution = Solution()
 # Example usage:
 prices1 = [7, 1, 5, 3, 6, 4]
-print(maxProfit(prices1))  # Output: 5
+print(solution.maxProfit(prices1))  # Output: 5
 
 prices2 = [7, 6, 4, 3, 1]
-print(maxProfit(prices2))  # Output: 0
+print(solution.maxProfit(prices2))  # Output: 0
