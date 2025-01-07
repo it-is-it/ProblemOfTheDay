@@ -1,0 +1,5 @@
+print("Number \t\t Square \t\t Cube")
+print(f"2 \t\t {2*2} \t\t\t {2**3}")
+print(f"3 \t\t {3*3} \t\t\t {3**3}")
+print(f"4 \t\t {4*4} \t\t\t {4**3}")
+print(f"5 \t\t {5*5} \t\t\t {5**3}")

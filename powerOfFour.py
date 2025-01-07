@@ -14,13 +14,12 @@
 # Input: n = 1
 # Output: true
  
-
 class Solution:
     def isPowerOfFour(self, n: int) -> bool:
         if n <= 0:
             return False
-        while n % 3 == 0:
-            n //= 3
+        while n % 4 == 0:
+            n //= 4
         return n == 1
 
 # Creating an instance of the Solution class
