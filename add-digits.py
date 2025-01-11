@@ -17,17 +17,17 @@
 
 class Solution:
     def addDigits(self, num: int) -> int:
-        # result = 0
-        # while len(str(num)) > 1:
-        #     result = 0
-        #     while num > 0: 
-        #         remainder = num % 10
-        #         result += remainder
-        #     num = result
-        # return num
-        if num == 0:
-           return 0
-        return 1 + (num - 1) % 9
+        while num >= 10:  
+            result = 0
+            while num > 0:
+                remainder = num % 10
+                result += remainder
+                num //= 10  
+            num = result
+        return num
+        # if num == 0:
+        #    return 0
+        # return 1 + (num - 1) % 9
 
 
 
