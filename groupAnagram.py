@@ -25,7 +25,6 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # Dictionary to hold groups of anagrams
         anagrams = defaultdict(list)
-        
         for word in strs:
             # Create a sorted version of the string as the key
             sorted_word = ''.join(sorted(word))
