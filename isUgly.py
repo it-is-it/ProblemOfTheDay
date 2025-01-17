@@ -19,10 +19,13 @@
 
 class Solution:
     def isUgly(self, n: int) -> bool:
-        if n > 1:
-            if (n % 2 == 0 or n % 3==0 or n % 5 == 0):
-                return True
-        return False
+        if n <= 0:  # Negative numbers and zero are not considered "ugly"
+            return False
+        for factor in [2, 3, 5]:  # Check for factors 2, 3, and 5
+            while n % factor == 0:  # Keep dividing n by the factor as long as it's divisible
+                n //= factor
+        return n == 1  # If the final n is 1, it's an ugly number
+
 
     
 solution = Solution()
