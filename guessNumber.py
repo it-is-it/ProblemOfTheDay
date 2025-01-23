@@ -61,4 +61,5 @@ pick = 1
 print(solution.guessNumber(1))  # Output: 1
 
 pick = 1
-print(solution.guessNumber(2)) #Output: 2
+print(solution.guessNumber(2)) #Output: 1
+
